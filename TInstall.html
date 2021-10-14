@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://tinstall.hx-jt.cn/example2.html?id=123 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>TInstall</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                line-height: 2.3
+            }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+<script src="./TInstall_files/jquery.js.下载"></script></head>
+
+<body data-new-gr-c-s-check-loaded="14.1033.0" data-gr-ext-installed="">
+    <div class="container">
+        <h1>TInstall 测试界面</h1>
+        <a href="javascript:;"><h3 id="download">下载测试包</h3></a>
+        
+    </div>
+
+<script src="./TInstall_files/tinstall_inner.min.js.下载"></script><script src="./TInstall_files/mobile-detect.min.js.下载" type="text/javascript"></script>
+<!--<script src="https://api.tinstall.xyz/static/home/tinstall_inner.min.js?id=29"></script>-->
+<script>
+    $(function(){
+       
+        $("#download").bind("click",function(){
+            // try{
+            var params=TInstall.parseUrlParams();
+            // localStorage.setItem("name","hahahahah");
+            // alert("cookie 设置成功 为 ："+JSON.stringify(params));
+            TInstall.setChannel("test_channel_123");
+            TInstall.getInstall("2IHLM6",params,function(res){
+                // alert("success");
+                alert(JSON.stringify(res));
+                
+                var ua = navigator.userAgent;//获取userAgent信息
+                var md = new MobileDetect(ua);//实例化mobile-detect
+                var os = md.os();//获取系统
+
+                // if (os == "iOS") {//ios系统的处理
+                //     window.location.href="itms-services://?action=download-manifest&url=https%3a%2f%2ftinstall.xyz%2fmanifest.plist";
+                // } else if (os == "AndroidOS") {//Android系统的处理
+                      window.location.href="https://raw.githubusercontent.com/bigzoombie/maven_repository/release/a107-release-880.apk";
+                // }
+                
+            });
+           
+            
+        });
+        
+    })
+
+
+</script>
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-top.png&quot;);"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
